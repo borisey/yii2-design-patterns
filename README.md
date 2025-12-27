@@ -10,7 +10,7 @@ composer require borisey/yii2-design-patterns:"dev-main" --dev
 ],
 ```
 
-## Порождающе
+## Порождающие
 
 ### [Абстрактная фабрика](src/behaviorals/AbstractFactory/README.md)
 
