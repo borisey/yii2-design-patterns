@@ -7,7 +7,7 @@ use yii\web\Controller;
 class DefaultController extends Controller
 {
     /**
-     * http://localhost:8000/patterns/default/index/
+     * /yii2-design-patterns/default/index/
      */
     public function actionIndex()
     {

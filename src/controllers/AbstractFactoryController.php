@@ -10,7 +10,7 @@ use Yii;
 class AbstractFactoryController extends Controller
 {
     /**
-     * http://localhost:8000/patterns/abstract-factory/index/
+     * /yii2-design-patterns/abstract-factory/index/
      */
     public function actionIndex()
     {
