@@ -1,0 +1,13 @@
+{
+  "name": "borisey/yii2-design-patterns",
+  "description": "description",
+  "require": {
+    "php": ">=8.2",
+    "ext-libxml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Borisey\\Yii2DesignPatterns\\": "src/"
+    }
+  }
+}
