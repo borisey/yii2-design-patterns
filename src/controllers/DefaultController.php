@@ -28,4 +28,33 @@ class DefaultController extends Controller
             'content' => $html,
         ]);
     }
+
+    public function actionDocs($page = 'readme')
+    {
+        $basePath = \Yii::getAlias('@vendor/borisey/yii2-design-patterns');
+
+        $map = [
+            'readme' => 'README.md',
+            'docs/installation' => 'docs/installation.md',
+            'docs/usage' => 'docs/usage.md',
+            'docs/examples' => 'docs/examples.md',
+        ];
+
+        if (!isset($map[$page])) {
+            throw new \yii\web\NotFoundHttpException();
+        }
+
+        $file = realpath($basePath . '/' . $map[$page]);
+
+        if (!$file || !file_exists($file)) {
+            throw new \yii\web\NotFoundHttpException();
+        }
+
+        return $this->renderContent(
+            \yii\helpers\Markdown::process(
+                file_get_contents($file),
+                'gfm'
+            )
+        );
+    }
 }
