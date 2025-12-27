@@ -3,8 +3,9 @@
 namespace Borisey\Yii2DesignPatterns\controllers;
 
 use Borisey\Yii2DesignPatterns\behaviorals\AbstractFactory\services\FileLoaderFactoryResolver;
+use yii\web\Controller;
 
-class AbstractFactoryController
+class AbstractFactoryController extends Controller
 {
     /**
      * http://localhost:8000/patterns/abstract-factory/index
