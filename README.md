@@ -12,7 +12,7 @@ composer require borisey/yii2-design-patterns:"dev-main" --dev
 
 ## Порождающе
 
-### [Абстрактная фабрика](behaviorals/AbstractFactory/README.md)
+### [Абстрактная фабрика](src/behaviorals/AbstractFactory/README.md)
 
 ## Структурные 
 
