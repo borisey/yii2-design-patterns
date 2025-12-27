@@ -3,12 +3,14 @@
 namespace Borisey\Yii2DesignPatterns\controllers;
 
 use Borisey\Yii2DesignPatterns\behaviorals\AbstractFactory\services\FileLoaderFactoryResolver;
-use yii\web\Controller;
+use Borisey\Yii2DesignPatterns\forms\UploadForm;
+use yii\web\{Controller, UploadedFile};
+use Yii;
 
 class AbstractFactoryController extends Controller
 {
     /**
-     * http://localhost:8000/patterns/abstract-factory/index
+     * http://localhost:8000/patterns/abstract-factory/index/
      */
     public function actionIndex()
     {
