@@ -9,6 +9,6 @@ composer require borisey/yii2-design-patterns:"dev-main" --dev
 ```
 
 📦 Документация:
-- [Установка](/docs/installation)
-- [Использование](/docs/usage)
-- [Примеры](/docs/examples)
+- [Установка](docs/installation.md)
+- [Использование](docs/usage.md)
+- [Примеры](docs/examples.md)
